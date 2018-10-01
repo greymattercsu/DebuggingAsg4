@@ -11,10 +11,10 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import org.junit.After;
 import org.junit.AfterClass;
+import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
@@ -22,6 +22,7 @@ import static org.junit.Assert.*;
  */
 public class CheckoutCTLTest {
     
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
    
     public CheckoutCTLTest() {
     }
@@ -36,7 +37,7 @@ public class CheckoutCTLTest {
     
     @Before
     public void setUp() {
-
+            System.setOut(new PrintStream(outContent));
     }
     
     @After
@@ -53,6 +54,13 @@ public class CheckoutCTLTest {
         int roomNumber = 301;
         double total = 7.00;
         Hotel hotel = HotelHelper.loadHotel();
+        
+        CheckoutCTL instance = new CheckoutCTL(hotel);
+        instance.roomIdEntered(roomNumber);
+        String actualOutput = outContent.toString();
+        String actualTotalString = actualOutput.substring(actualOutput.indexOf("Total")+ 8);
+        double actualTotal = Double.parseDouble(actualTotalString);
+        assertEquals(total, actualTotal, 0);
     }
     
 }
