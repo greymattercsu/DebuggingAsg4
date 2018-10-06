@@ -63,6 +63,25 @@ public class RecordServiceCTLTest {
         assertTrue(actualOutput.contains(excpeted));
     }
     
+          /**
+     * Test of run method, of class RecordServiceCTL.
+     * @throws java.lang.Exception
+     */
+    @Test
+    public void testRoomNumberEnteredCheckIn() throws Exception {
+        int roomNumber = 301;
+        double cost = 30.00;
+        ServiceType serviceType = ServiceType.BAR_FRIDGE;
+        String excpeted = String.format("Room %d charged $%.2f for %s", roomNumber, cost, serviceType.getDescription());
+        
+        Hotel hotel = HotelHelper.loadHotel();
+        RecordServiceCTL instance = new RecordServiceCTL(hotel);
+        instance.roomNumberEntered(roomNumber);
+        instance.serviceDetailsEntered(serviceType, cost);
+        String actualOutput = outContent.toString();
+        
+        assertTrue(actualOutput.contains(excpeted));
+    }
 
     
 }
