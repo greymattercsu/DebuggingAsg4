@@ -48,6 +48,21 @@ public class RecordServiceCTLTest {
     public void tearDown() {
     }
 
+    /**
+     * Test of run method, of class RecordServiceCTL.
+     */
+    @Test
+    public void testRoomNumberEnteredCheckout() throws Exception {
+        int roomNumber = 301;
+        String excpeted = String.format("No active booking for room id: %d", roomNumber);
+        Hotel hotel = HotelHelper.loadHotel();
+        hotel.checkout(roomNumber);
+        RecordServiceCTL instance = new RecordServiceCTL(hotel);
+        instance.roomNumberEntered(roomNumber);
+        String actualOutput = outContent.toString();
+        assertTrue(actualOutput.contains(excpeted));
+    }
+    
 
     
 }
