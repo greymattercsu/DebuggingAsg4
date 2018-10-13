@@ -26,6 +26,7 @@ public class CheckoutCTL {
 	public CheckoutCTL(Hotel hotel) {
 		this.hotel = hotel;
 		this.checkoutUI = new CheckoutUI(this);
+                state = State.ROOM;
 	}
 
 	
