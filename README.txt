@@ -1,10 +1,5 @@
-Student number:11643832
-Studnet Name: Bijan Dhakal
-
 Assignment: Debugging
-
 Description: Replicate, simplify, trace, and eliminate the reported bugs using best practice debugging techniques.
-
 ______________________________________________________________________________________
 Assignemnt Done Details
 
