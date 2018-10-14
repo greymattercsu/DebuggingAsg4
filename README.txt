@@ -7,7 +7,7 @@ Version Control:
 	|Master: https://github.com/greymattercsu/DebuggingAsg4
 	|BijanDhakal: https://github.com/greymattercsu/DebuggingAsg4/tree/BijanDhakal
 
-Assignemnt PDF: In the file 11643832_BijanDhakal_ITC515_A4.pdf
+Assignemnt PDF: Turnitin submission
 	|Table of Contents
 		|Bug: Service Charge reported 0.0 during checkout - pg.2
 			|Replication (UAT) - pg.2
@@ -35,10 +35,10 @@ Bug 1: All Service charges are reported as 0.00 when checking out
 	|Test Case: https://github.com/greymattercsu/DebuggingAsg4/blob/BijanDhakal/test/hotel/checkout/CheckoutCTLTest.java
 	|Solution: https://github.com/greymattercsu/DebuggingAsg4/blob/BijanDhakal/src/hotel/entities/Booking.java
 		|Note: Solution is at line 141 of Booking.java
-	|Tracing: In the file 11643832_BijanDhakal_ITC515_A4.pdf from pg10	 
+	|Tracing: turnitin submission from pg10	 
 Bug 2: It is possible to charge a room for service after the guest has checked out
  	|Report: https://github.com/greymattercsu/DebuggingAsg4/tree/BijanDhakal/Reporting/BUG2
 	|Test Case: https://github.com/greymattercsu/DebuggingAsg4/blob/BijanDhakal/test/hotel/service/RecordServiceCTLTest.java
 	|Solution: https://github.com/greymattercsu/DebuggingAsg4/blob/BijanDhakal/src/hotel/entities/Hotel.java
 		|Note: Solution is at line 129 of Hotel.java
-	|Tracing: In the file 11643832_BijanDhakal_ITC515_A4.pdf from pg 30
+	|Tracing: In turnitin submission from pg 30
