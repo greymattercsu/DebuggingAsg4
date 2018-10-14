@@ -28,7 +28,7 @@ Assignemnt PDF: In the file 11643832_BijanDhakal_ITC515_A4.pdf
 				|Automatic Test	- pg.35
 				|UAT - pg.37
 ______________________________________________________________________________________________
-In the Version control Assignemtn work done
+In the Version control Assignemnt work done
 
 Bug 1: All Service charges are reported as 0.00 when checking out
 	|Report: https://github.com/greymattercsu/DebuggingAsg4/tree/BijanDhakal/Reporting/BUG1
